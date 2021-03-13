@@ -53,7 +53,7 @@ function Header() {
   return (
     <Nav>
       <NavHeader>
-        <NavLeft>Stylagram</NavLeft>
+        <NavLeft>Instagram</NavLeft>
         <NavCenter>
           <Input type="text" placeholder="Search" />
         </NavCenter>
