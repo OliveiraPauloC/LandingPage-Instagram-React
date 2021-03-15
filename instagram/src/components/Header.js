@@ -3,10 +3,13 @@ import styled from 'styled-components';
 import { ReactComponent as Explore } from '../explore.svg';
 import { ReactComponent as Avatar } from '../avatar.svg';
 import { ReactComponent as Compass } from '../compass.svg';
+import { ReactComponent as Icon } from '../instagramIcon.svg'
+
 const Nav = styled.div`
   background-color: #fff;
   border-bottom: 1px solid rgba(0, 0, 0, 0.0975);
 `;
+
 const NavHeader = styled.div`
   max-width: 1010px;
   padding: 26px 20px;
@@ -15,14 +18,21 @@ const NavHeader = styled.div`
   align-items: center;
   margin: 0 auto;
 `;
+
 const NavLeft = styled.div`
   width: 33.333%;
   text-align: left;
+  svg {
+    width:25px;
+    height: 25px;
+  }
 `;
+
 const NavCenter = styled.div`
   width: 33.333%;
   text-align: center;
 `;
+
 const Input = styled.input`
   font-size: 16px;
   border: solid 1px #dbdbdb;
@@ -41,6 +51,7 @@ const Input = styled.input`
     text-align: left;
   }
 `;
+
 const NavRight = styled.div`
   width: 33.333%;
   text-align: right;
@@ -48,12 +59,13 @@ const NavRight = styled.div`
     margin-right: 20px;
   }
 `;
+
 const MenuLink = styled.a``;
 function Header() {
   return (
     <Nav>
       <NavHeader>
-        <NavLeft>Instagram</NavLeft>
+        <NavLeft><Icon/></NavLeft>
         <NavCenter>
           <Input type="text" placeholder="Search" />
         </NavCenter>
@@ -72,5 +84,6 @@ function Header() {
     </Nav>
   );
 }
+
 export default Header;
 

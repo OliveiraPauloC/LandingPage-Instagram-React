@@ -6,7 +6,7 @@ import profileIcon from '../profileIcon.png'
 const feedsource = [
   {
     source:
-      'https://picsum.photos/200/150.jpg',
+      'https://picsum.photos/200/150?random=1',
     likes: '43',
     comments: '3',
     isVideo: false,
@@ -14,7 +14,7 @@ const feedsource = [
   },
   {
     source:
-      'https://picsum.photos/200/150.jpg',
+      'https://picsum.photos/200/150?random=2',
     likes: '313',
     comments: '10',
     isVideo: true,
@@ -22,7 +22,7 @@ const feedsource = [
   },
   {
     source:
-      'https://picsum.photos/200/150.jpg',
+      'https://picsum.photos/200/150?random=3',
     likes: '29',
     comments: '2',
     isVideo: false,
@@ -30,7 +30,7 @@ const feedsource = [
   },
   {
     source:
-      'https://picsum.photos/200/150.jpg',
+      'https://picsum.photos/200/150?random=4',
     likes: '18',
     comments: '2',
     isVideo: false,
@@ -38,21 +38,32 @@ const feedsource = [
   },
   {
     source:
-      'https://picsum.photos/200/150.jpg',
+      'https://picsum.photos/200/150?random=5',
     likes: '30',
     comments: '4',
     isVideo: false,
     id: 4,
   },
+  {
+    source:
+      'https://picsum.photos/200/150?random=6',
+    likes: '34',
+    comments: '6',
+    isVideo: false,
+    id: 4,
+  },
 ];
+
 const ProfileContainer = styled.div`
   max-width: 1010px;
   width: 100%;
   margin: 20px auto;
 `;
+
 const ProfileDetails = styled.div`
   display: flex;
 `;
+
 const ProfileDetailsLeft = styled.div`
   margin-right: 40px;
   width: 300px;
@@ -60,23 +71,27 @@ const ProfileDetailsLeft = styled.div`
   align-items: center;
   justify-content: center;
 `;
+
 const ProfileDetailsRight = styled.div`
   display: flex;
   align-items: end;
   justify-content: center;
   flex-direction: column;
 `;
+
 const ProfileImage = styled.img`
   border-radius: 50%;
   width: 150px;
   border: 1px solid #ccc;
   padding: 5px;
 `;
+
 const ProfileDetailsUsername = styled.div`
   display: flex;
   align-items: center;
   justify-content: center;
 `;
+
 const EditProfileButton = styled.div`
   background-color: transparent;
   border: 1px solid #dbdbdb;
@@ -89,22 +104,27 @@ const EditProfileButton = styled.div`
   font-size: 14px;
   margin-left: 20px;
 `;
+
 const HeadingThreeText = styled.h3``;
 const ParagraphText = styled.p`
   margin-right: 25px;
 `;
+
 const ProfileDetailsMeta = styled.div`
   display: flex;
   justify-content: center;
 `;
+
 const ProfileDetailsName = styled.div`
   text-align: left;
 `;
+
 const ImagesWrapper = styled.div`
   margin-top: 50px;
   display: flex;
   flex-wrap: wrap;
 `;
+
 function Profile() {
   return (
     <ProfileContainer>
@@ -119,7 +139,7 @@ function Profile() {
           </ProfileDetailsUsername>
           <ProfileDetailsMeta>
             <ParagraphText>
-              <strong>5</strong> posts
+              <strong>6</strong> posts
             </ParagraphText>
             <ParagraphText>
               <strong>296</strong> followers
@@ -130,7 +150,7 @@ function Profile() {
           </ProfileDetailsMeta>
           <ProfileDetailsName>
             <ParagraphText>
-              <strong>Yomi</strong>
+              <strong>Paulo Oliveira</strong> <br/>Fullstack Developer, 30, 🇧🇷
             </ParagraphText>
           </ProfileDetailsName>
         </ProfileDetailsRight>
@@ -143,5 +163,6 @@ function Profile() {
     </ProfileContainer>
   );
 }
+
 export default Profile;
 

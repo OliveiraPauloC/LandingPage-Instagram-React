@@ -3,6 +3,7 @@ import styled from 'styled-components';
 import { ReactComponent as Comment } from '../comment.svg';
 import { ReactComponent as Play } from '../play.svg';
 import { ReactComponent as Heart } from '../heart.svg';
+
 const ImgContainer = styled.div`
   position: relative;
   flex-basis: 100%;
@@ -11,6 +12,7 @@ const ImgContainer = styled.div`
   cursor: pointer;
   transition: 0.5s all ease-in;
 `;
+
 const ImgIcons = styled.div`
   display: flex;
   align-items: center;
@@ -21,6 +23,7 @@ const ImgIcons = styled.div`
     margin-right: 10px;
   }
 `;
+
 const ImgMeta = styled.div`
   display: none;
   align-items: center;
@@ -35,10 +38,12 @@ const ImgMeta = styled.div`
     display: flex !important;
   }
 `;
+
 const Img = styled.img`
   cursor: pointer;
   width: 100%;
 `;
+
 function Image({ image }) {
   return (
     <ImgContainer>
@@ -54,5 +59,6 @@ function Image({ image }) {
     </ImgContainer>
   );
 }
+
 export default Image;
 
