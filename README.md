@@ -1,6 +1,6 @@
 # Projeto Instagram em React
 
-## Página de perfil no Instagram 
+## Projeto pessoal, criando a página de perfil no Instagram 
 
 ### Visite: [Perfil - Instagram](https://instagram-devpaulo.vercel.app/)
 
